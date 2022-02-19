@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme_Light" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_color</item>
+        <!-- Customize your theme here. -->
+        <item name="background_color">@color/primary_bg</item>
+        <item name="text_l1">@color/primary_text</item>
+        <item name="text_l2">@color/primary_text2</item>
+        <item name="toolbar">@color/primary_color</item>
+        <item name="primary_2">@color/primary_color2</item>
+        <item name="text_kem">@color/tab_color</item>
+        <item name="dialog_head">@color/primary_color</item>
+        <item name="white2black">@color/white</item>
+        <item name="dialog_bg">@color/white</item>
+        <item name="text_hint">#6d6d6d</item>
+        <item name="seperator">@color/selected_text</item>
+        <item name="white2grey">@color/white</item>
+        <item name="kem2black">@color/tab_color</item>
+        <item name="kem2grey">@color/tab_color</item>
+        <item name="button">@color/primary_color2</item>
+        <item name="tab_color">@color/tab_color</item>
+        <item name="unselected">@color/unselected_text</item>
+        <item name="selected">@color/selected_text</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

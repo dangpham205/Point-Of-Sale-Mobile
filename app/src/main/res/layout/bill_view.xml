@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_primary_radius_top_16"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="BILL"
+        android:textColor="?attr/text_kem"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/customer_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Customer's Email."
+        android:textColorHint="?attr/text_hint"
+        android:textSize="18dp"
+        android:padding="28dp"
+        android:textColor="?attr/text_l2"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="?attr/white2black">
+
+        <TextView
+            android:id="@+id/bill_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_primary_radius_16"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="NO"
+            android:textColor="?attr/text_kem"
+            android:textSize="16sp"
+            android:layout_marginRight="4dp"/>
+
+        <TextView
+            android:id="@+id/bill_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/bg_primary_radius_16"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="YES"
+            android:textColor="?attr/text_kem"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

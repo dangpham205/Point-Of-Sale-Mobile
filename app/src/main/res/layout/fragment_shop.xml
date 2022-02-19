@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ShopFragment"
+    android:background="?attr/white2black"
+    android:id="@+id/shop_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/shop_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="?attr/tab_color"
+            app:tabTextColor="?attr/unselected"
+            app:tabSelectedTextColor="?attr/selected"
+            app:tabIndicatorColor="?attr/selected"
+            app:tabIndicatorHeight="2dp"
+            app:tabTextAppearance="@style/MineCustomTabText"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/shop_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_add_categories"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="180dp"
+            android:backgroundTint="@color/item_color"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Discount"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_add_items"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="110dp"
+            android:backgroundTint="@color/item_color"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Product"
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_add_discounts"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="-120dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#00000000"
+            android:gravity="center_horizontal|center_vertical"
+            android:text=""
+            android:textAlignment="center"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="32dp"
+            android:backgroundTint="@color/item_color"
+            android:src="@drawable/ic_add"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</FrameLayout>

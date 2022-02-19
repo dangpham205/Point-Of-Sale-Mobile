@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_sales"
+            android:title="SALES"
+            android:icon="@drawable/ic_pos"/>
+        <item android:id="@+id/nav_receipts"
+            android:title="RECEIPTS"
+            android:icon="@drawable/ic_receipt"/>
+        <item android:id="@+id/nav_shop"
+            android:title="SHOP"
+            android:icon="@drawable/ic_shop"/>
+    </group>
+    <item android:title="SETTINGS" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_settings"
+                    android:title="THEME"
+                    android:icon="@drawable/ic_settings"
+                    android:state_checked="true" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_user_profile"
+                    android:state_checked="true"
+                    android:title="UPDATE PROFILE" />
+                <item
+                    android:id="@+id/nav_change_password"
+                    android:icon="@drawable/ic_change_password"
+                    android:state_checked="true"
+                    android:title="CHANGE PASSWORD" />
+            </group>
+            <item android:id="@+id/nav_logout"
+                android:title="LOG OUT"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+
+</menu>

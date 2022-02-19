@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/white2black"
+    android:orientation="vertical"
+    tools:context=".fragment.SalesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/kem2grey">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/drop_menu_sale"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="0.0000000000005dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Sort by"
+            app:hintTextColor="?attr/text_hint"
+            android:padding="8dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/drop_items_sale"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textSize="12sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="?attr/text_l2"
+            android:layout_gravity="right"/>
+
+        <SearchView
+            android:id="@+id/search_sales"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+        </SearchView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?attr/text_l2"
+        android:layout_gravity="bottom"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_sales"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollIndicators="right"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary_color2">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/sale_cart2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_vertical"
+            android:text="Total:  VND"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cart_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:gravity="start"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/empty_cart"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

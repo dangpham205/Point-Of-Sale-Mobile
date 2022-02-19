@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_primary_radius_top_16"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Add Discount"
+        android:textColor="?attr/text_kem"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?attr/white2black"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_discount_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="?attr/text_hint"
+            android:hint="Name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="?attr/white2black"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_discount_prop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColorHint="?attr/text_hint"
+                android:inputType="numberDecimal"
+                android:hint="Value"/>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/text_hint"
+                android:text="%"
+                android:textSize="25dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_primary_radius_16"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Cancel"
+            android:textColor="?attr/text_kem"
+            android:textSize="16sp"
+            android:layout_marginRight="4dp"/>
+
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/bg_primary_radius_16"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Confirm"
+            android:textColor="?attr/text_kem"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

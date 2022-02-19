@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_radius_16"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_primary_radius_top_16"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Your Cart"
+        android:textColor="?attr/text_kem"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?attr/seperator"
+        android:layout_gravity="bottom"/>
+    <TextView
+        android:id="@+id/cart_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Products selected:"
+        android:textSize="18dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="4dp"
+        android:background="?attr/white2grey"
+        android:textColor="?attr/text_l2"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scrollIndicators="right"
+        android:background="?attr/white2grey">
+        <TextView
+            android:id="@+id/cart_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Products selected:"
+            android:textSize="16dp"
+            android:padding="4dp"
+            android:layout_marginLeft="34dp"
+            android:textColor="?attr/text_l2"/>
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?attr/seperator"
+        android:layout_gravity="bottom"/>
+    <LinearLayout
+        android:id="@+id/after_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/kem2grey">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount (%):"
+            android:textSize="18dp"
+            android:paddingTop="4dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="?attr/text_l2"/>
+        <TextView
+            android:id="@+id/cart_discount"
+            android:layout_width="200dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:paddingRight="16dp"
+            android:textSize="18dp"
+            android:paddingTop="4dp"
+            android:textColor="?attr/text_l2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/kem2grey"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total (VNĐ):"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textColor="?attr/text_l2"/>
+        <TextView
+            android:id="@+id/cart_price"
+            android:layout_width="410dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:paddingRight="16dp"
+            android:textSize="18dp"
+            android:paddingTop="6dp"
+            android:textColor="?attr/text_l2"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?attr/seperator"
+        android:layout_gravity="bottom"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="?attr/white2black">
+
+        <TextView
+            android:id="@+id/cart_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_primary_radius_16"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="CANCEL"
+            android:textColor="?attr/text_kem"
+            android:textSize="16sp"
+            android:layout_marginRight="4dp"/>
+
+        <TextView
+            android:id="@+id/cart_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/bg_primary_radius_16"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="SEND BILL"
+            android:textColor="?attr/text_kem"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

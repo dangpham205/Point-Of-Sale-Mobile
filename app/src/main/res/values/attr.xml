@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="dt">
+        <attr name="background_color" format="color"/>
+        <attr name="text_l1" format="color"/>
+<!--        màu trắng, qua dark thành đen-->
+        <attr name="text_l2" format="color"/>
+<!--        text đen -> trắng -->
+        <attr name="toolbar" format="color"/>
+<!--        từ primary thành xám đậm-->
+        <attr name="primary_2" format="color"/>
+<!--        từ nâu nhạt thành xám nhạt-->
+        <attr name="text_kem" format="color"/>
+<!--        text màu kem giữ nguyên-->
+        <attr name="dialog_head" format="color"/>
+<!--        màu head của dialog-->
+        <attr name="white2black" format="color"/>
+<!--        màu nên của border-radius-->
+        <attr name="dialog_bg" format="color"/>
+<!--        màu nên của dialog từ trănnsg thành xám-->
+        <attr name="text_hint" format="color"/>
+<!--        đổi từ xám nhạt thành-->
+        <attr name="seperator" format="color"/>
+        <attr name="white2grey" format="color"/>
+        <attr name="kem2grey" format="color"/>
+        <attr name="kem2black" format="color"/>
+        <attr name="button" format="color"/>
+        <attr name="tab_color" format="color"/>
+        <attr name="unselected" format="color"></attr>
+        <attr name="selected" format="color"/>
+    </declare-styleable>
+</resources>
