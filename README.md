@@ -6,4 +6,9 @@ Function:<br>
 2/ Manage products<br>
 3/ Manage discounts<br>
 4/ Manage receipts<br>
-
+5/ Change password<br>
+6/ Forgot password<br>
+7/ Update profile (username, avatar)<br>
+8/ Sort, search products, discounts<br>
+9/ Send receipt to customers <br>
+10/ Change theme (dark mode)
