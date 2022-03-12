@@ -11,4 +11,5 @@ Function:<br>
 7/ Update profile (username, avatar)<br>
 8/ Sort, search products, discounts<br>
 9/ Send receipt to customers <br>
-10/ Change theme (dark mode)
+10/ Change theme (dark mode) <br>
+Demo app: https://www.youtube.com/watch?v=t3Z-MhA_ruc&t=3s
